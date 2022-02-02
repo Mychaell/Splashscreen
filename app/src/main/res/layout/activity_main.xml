@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FB9333"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/meal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="150dp"
+        />
+
+    <TextView
+        android:id="@+id/brandname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mike Chops"
+        android:textColor="#5D3613"
+        app:layout_constraintTop_toBottomOf="@id/meal"
+        app:layout_constraintRight_toRightOf="@id/meal"
+        app:layout_constraintLeft_toLeftOf="@id/meal"
+        android:layout_marginTop="50dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+
+        />
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/foodie"
+        app:layout_constraintTop_toBottomOf="@id/meal"
+        app:layout_constraintLeft_toLeftOf="@id/brandname"
+        app:layout_constraintRight_toRightOf="@id/brandname"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="55dp"
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
